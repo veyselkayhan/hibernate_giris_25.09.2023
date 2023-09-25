@@ -5,7 +5,7 @@
         <!-- Kullanılacak Veritabanı Sürücüsünün Adı       -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <!--  ConnectionString       -->
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/ETicaret</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/JavaBoost11DB</property>
         <!--  Kullanıcı Adı , yetkili kullanıcı      -->
         <property name="hibernate.connection.username">postgres</property>
         <!--  Şifre      -->
@@ -27,10 +27,8 @@
                 DİKKAT!! kafanıza göre her sınıfı haritalayamazsınız. çünkü hibernate
                 @Entity ile işaretlenmemiş hiç bir sınıfı kullanamaz.
         -->
-        <mapping class="com.muhammet.repository.entity.Musteri"></mapping>
-        <mapping class="com.muhammet.repository.entity.Sepet"></mapping>
-        <mapping class="com.muhammet.repository.entity.SepetDetay"></mapping>
-        <mapping class="com.muhammet.repository.entity.Urun"></mapping>
+        <mapping class="com.veysel.repository.entity.User"></mapping>
+
 
     </session-factory>
 </hibernate-configuration>
